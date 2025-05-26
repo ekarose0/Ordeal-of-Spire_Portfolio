@@ -14,8 +14,10 @@
 |기술|설명|
 |:------:|:--------------------------|
 |디자인 패턴|**싱글톤** 패턴을 사용하여 데이터 구조 관리<br>**Manager** 스크립트를 통한 하위 스크립트 관리|
-|Scriptable Object|Scriptable Object를 통한 DB관리 및 설정|
+|Scriptable Object|Scriptable Object를 통한 DB관리(캐릭터, 몬스터, 맵) 및 설정|
 |Save|Json을 통한 정보 저장/불러오기|
+|Pool|소환되는 오브젝트는 Pool을 통한 접근 및 저장|
+
 
 ## 시스템 구현
 ### 1. ㅁ
