@@ -5,7 +5,8 @@
 - Unity 2D
 
 ## 개발 환경   
-- Unity 2022.3.22f1 LTS (Dev), Spine 4.2 (Ani)   
+- Unity 2022.3.22f1 LTS
+- Spine 4.2
 - C#
 - Window 10/11
 
