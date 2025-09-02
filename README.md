@@ -18,6 +18,13 @@
 |Save|Json을 통한 정보 저장/불러오기|
 |Pool|소환되는 오브젝트는 Pool을 통한 접근 및 저장|
 
+## 유니티 엔진 구현
+### 1. Inspector 구조 커스텀
+|스크립트|결과|
+|:------:|:--------------------------|
+|![image](https://github.com/user-attachments/assets/2611b96b-11be-44b6-9ffa-3e83fff34de6)|**싱글톤** 패턴을 사용하여 데이터 구조 관리<br>**Manager** 스크립트를 통한 하위 스크립트 관리<br>**Define**을 통한 정의 관리|
+<pre><code>- Inspector창의 
+
 
 ## 시스템 구현
 ### 1. Scriptable Object, DB관리
