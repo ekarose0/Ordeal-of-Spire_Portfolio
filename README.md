@@ -21,7 +21,7 @@
 ## 유니티 엔진 구현
 ### 1. Inspector 커스텀
 |스크립트|결과|
-|:-----:|:------|
+|:-----:|:------:|
 |<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/e4a59ec1-e183-4b51-8020-4d1d985d4b76" />|<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/88a1d772-1044-48f6-8d41-83a70c14a802" />|
 |<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/573dd6fc-9847-43b1-8283-eb3a170900ef" />|<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/fe452863-3b01-4259-b3db-8ff18ffd6db0" />
 |
@@ -35,7 +35,7 @@
 ### 1. Scriptable Object, DB관리
 
 |DB관리 목록|이미지|내역|
-|:-----:|:------|:-----|
+|:-----:|:------:|:-----:|
 |몬스터|<img width="734" height="111" alt="image" src="https://github.com/user-attachments/assets/4e9f19f0-f2b5-440a-9bca-849495a19305" />|<img width="648" height="385" alt="image" src="https://github.com/user-attachments/assets/65c2855f-a666-4e8d-95b2-05c8139a1eec" />|
 |스킬|<img width="524" height="119" alt="image" src="https://github.com/user-attachments/assets/87d8a5e7-7469-4de8-8569-5e8eca1fc439" />|<img width="607" height="561" alt="image" src="https://github.com/user-attachments/assets/539103d5-a36d-4877-8416-ea31614c8d4c" />|
 |스테이지|<img width="850" height="128" alt="image" src="https://github.com/user-attachments/assets/027d396b-f90b-428f-8539-de32078d337c" />|<img width="646" height="431" alt="image" src="https://github.com/user-attachments/assets/1e7b3f0f-be4a-4910-8e39-1c65c220b876" />|
@@ -44,12 +44,15 @@
 <pre><code> ==Scriptable Object를 사용한 DB관리==
 DB를 Scriptable Object를 사용하여 인게임 내에서 쉽게 관리하고 리소스를 쉽게 관리 하기위해 작성되었습니다.</code></pre>
 
-### 2. HP시스템
-|환경|이미지|
-|:-----:|:------|
-|피가 달경우||
+### 2. 스텟 시스템
+|내역|결과물|연출 관련 코드|
+|:-----:|:------:|:-------:|
+|체력|<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/023a1787-62c1-4498-869b-b5bd3b9cd2cb" />||
+|스테미너|<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/308252c8-ad56-405d-9645-077987980115" />|<img width="753" height="242" alt="image" src="https://github.com/user-attachments/assets/9921fbda-d606-470a-9677-cb041218cea9" />|
 
-### 3. 스테미너 시스템
+<pre><code> 원형이 되는 함수를 건들이지 않고 부분 값을 가져와 넣는 방식입니다
+  해당 방식으로 통해 코드의 호출을 최소화 하고 애니메이션을 통하여 연출을 추가하였습니다. </code></pre>
+
 
 ### 4. 몬스터 탐지, 공격모드 전환
 
