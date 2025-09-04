@@ -55,6 +55,11 @@ DB를 Scriptable Object를 사용하여 인게임 내에서 쉽게 관리하고 
 
 
 ### 4. 몬스터 탐지, 공격모드 전환
+|코드|관련 이미지|
+|:-----:|:-----:|
+||<img width="391" height="349" alt="image" src="https://github.com/user-attachments/assets/e7716ea9-9d0f-4ac4-8a51-d0bbafca7a77" />|
+
+
 
 ### 5. 대사 시스템
 
