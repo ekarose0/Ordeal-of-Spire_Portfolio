@@ -1,11 +1,22 @@
 # [Unity2D] Ordeal-of-Spire-Portfolio-
 
 ## 소개   
-(사진)   
-- Unity 2D
+|로고 이미지|
+|:-----:|
+|<img width="300" height="300" alt="팀 이미지" src="https://github.com/user-attachments/assets/61b0c8f5-e54c-4787-8170-ff82ad3c684a" />|
+
+> 2025 PlayX4에 팀장으로 참여한 프로젝트입니다. (총인원 14명)
+
+해당 프로젝트의 목적은 **여러 매커니즘**과 **게임성**에 맞게 완성하는것이며, 약 1.4년의 개발기간을 통해 제작되었습니다.
+
+|게임 이미지1|게임 이미지2|게임 이미지3|
+|:-----:|:-----:|:-----:|
+|<img width="300" height="168.75" alt="image" src="https://github.com/user-attachments/assets/5302391f-1431-472b-9c15-2d237a8983d2" />|<img width="300" height="168.75" alt="image" src="https://github.com/user-attachments/assets/2270b53a-da85-4b97-a441-c74437dae39f" />|<img width="300" height="168.75" alt="image" src="https://github.com/user-attachments/assets/a402b13d-efd6-4c80-9f8f-3babd93fa2a4" />|
+
 
 ## 개발 환경   
 - Unity 2022.3.22f1 LTS
+- Unity 2D URP
 - Spine 4.2
 - C#
 - Window 10/11
@@ -25,8 +36,7 @@
 |<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/88a1d772-1044-48f6-8d41-83a70c14a802" />|<img width="798" height="500" alt="image" src="https://github.com/user-attachments/assets/52cf784e-4222-45e0-802e-7d4bd75f84e4" />|
 |<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/f3ee5e69-6baf-4fc1-82fb-1b9b18d82088" />|<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/573dd6fc-9847-43b1-8283-eb3a170900ef" />|
 
-<pre><code> ==UnityEngine의 CustomEditor기능을 사용한 작업==
-개발자 외의 타 개발군에서 해당 프로젝트에 쉬운 접근성과 가시성을 표시하는걸 목적으로 제작하여 개발기간을 줄이는 목적으로 제작하였습니다.
+<pre><code>개발자 외의 타 개발군에서 해당 프로젝트에 쉬운 접근성과 가시성을 표시하는걸 목적으로 제작하여 개발기간을 줄이는 목적으로 제작하였습니다.
 버튼을 통한 기능추가 및 이미지와 프리팹등 다양한 설정값을 설정하여 이를 바탕으로 실제 게임에 적용됩니다.</code></pre>
 
 
@@ -40,8 +50,7 @@
 |스테이지|<img width="850" height="128" alt="image" src="https://github.com/user-attachments/assets/027d396b-f90b-428f-8539-de32078d337c" />|<img width="646" height="431" alt="image" src="https://github.com/user-attachments/assets/1e7b3f0f-be4a-4910-8e39-1c65c220b876" />|
 |아이템|<img width="628" height="135" alt="image" src="https://github.com/user-attachments/assets/3050ceca-9567-4c26-b01f-666ae7dddb31" />|<img width="645" height="259" alt="image" src="https://github.com/user-attachments/assets/7eb942d2-a22f-42dc-905a-f980c7059b8d" />|
 
-<pre><code> ==Scriptable Object를 사용한 DB관리==
-DB를 Scriptable Object를 사용하여 인게임 내에서 쉽게 관리하고 리소스를 쉽게 관리 하기위해 작성되었습니다.</code></pre>
+<pre><code>DB를 Scriptable Object를 사용하여 인게임 내에서 쉽게 관리하고 리소스를 쉽게 관리 하기위해 작성되었습니다.</code></pre>
 
 ### 2. 스텟 시스템
 |내역|결과물|연출 관련 스크립트|
@@ -49,8 +58,8 @@ DB를 Scriptable Object를 사용하여 인게임 내에서 쉽게 관리하고 
 |체력|<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/023a1787-62c1-4498-869b-b5bd3b9cd2cb" />|<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/0e85ad07-041e-42e7-9908-c881f0f8f1db" />|
 |스테미너|<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/308252c8-ad56-405d-9645-077987980115" />|<img width="753" height="242" alt="image" src="https://github.com/user-attachments/assets/9921fbda-d606-470a-9677-cb041218cea9" />|
 
-<pre><code> 원형이 되는 함수를 건들이지 않고 부분 값을 가져와 넣는 방식입니다
-  해당 방식으로 통해 코드의 호출을 최소화 하고 애니메이션을 통하여 연출을 추가하였습니다. </code></pre>
+<pre><code>원형이 되는 함수를 건들이지 않고 부분 값을 가져와 넣는 방식입니다
+ 해당 방식으로 통해 코드의 호출을 최소화 하고 애니메이션을 통하여 연출을 추가하였습니다. </code></pre>
 
 
 ### 4. 탐지, 공격모드 전환
@@ -58,7 +67,7 @@ DB를 Scriptable Object를 사용하여 인게임 내에서 쉽게 관리하고 
 |:-----:|:-----:|:-----:|
 |<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/e7716ea9-9d0f-4ac4-8a51-d0bbafca7a77" />|<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/24ed6733-2fe3-4337-a7d2-86f56b1af907" />|<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/f513b760-5fb7-4eed-8e5e-9f3d7cfdb6f4" />|
 
-<pre><code> 푸른색 범위에 플레이어에 잡힌다면 해당 몬스터는 탐색모드(플레이어를 계속 따라감)에서 공격모드로 전환합니다.
+<pre><code>푸른색 범위에 플레이어에 잡힌다면 해당 몬스터는 탐색모드(플레이어를 계속 따라감)에서 공격모드로 전환합니다.
 이때 공격을 하고 다시 ExitAttackMode를 통해 탐색모드로 전환합니다.
 이 방식은 프리팹을 통해 각 몬스터마다 탐지, 공격 범위를 쉽게 설정할 수 있다는 장점이 있습니다. </code></pre>
 
