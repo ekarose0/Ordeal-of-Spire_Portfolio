@@ -33,8 +33,8 @@
 ### 1. Inspector 커스텀
 |관련 이미지| 작성 스크립트|
 |:-----:|:------:|
-|<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/88a1d772-1044-48f6-8d41-83a70c14a802" />|<img width="798" height="500" alt="image" src="https://github.com/user-attachments/assets/52cf784e-4222-45e0-802e-7d4bd75f84e4" />|
-|<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/f3ee5e69-6baf-4fc1-82fb-1b9b18d82088" />|<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/573dd6fc-9847-43b1-8283-eb3a170900ef" />|
+|<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/88a1d772-1044-48f6-8d41-83a70c14a802" />|<img width="798" height="500" alt="image" src="https://github.com/user-attachments/assets/52cf784e-4222-45e0-802e-7d4bd75f84e4" />|
+|<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/f3ee5e69-6baf-4fc1-82fb-1b9b18d82088" />|<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/573dd6fc-9847-43b1-8283-eb3a170900ef" />|
 
 <pre><code>개발자 외의 타 개발군에서 해당 프로젝트에 쉬운 접근성과 가시성을 표시하는걸 목적으로 제작하여 개발기간을 줄이는 목적으로 제작하였습니다.
 버튼을 통한 기능추가 및 이미지와 프리팹등 다양한 설정값을 설정하여 이를 바탕으로 실제 게임에 적용됩니다.</code></pre>
