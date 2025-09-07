@@ -45,7 +45,7 @@
 DB를 Scriptable Object를 사용하여 인게임 내에서 쉽게 관리하고 리소스를 쉽게 관리 하기위해 작성되었습니다.</code></pre>
 
 ### 2. 스텟 시스템
-|내역|결과물|연출 관련 코드|
+|내역|결과물|연출 관련 스크립트|
 |:-----:|:------:|:-------:|
 |체력|<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/023a1787-62c1-4498-869b-b5bd3b9cd2cb" />||
 |스테미너|<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/308252c8-ad56-405d-9645-077987980115" />|<img width="753" height="242" alt="image" src="https://github.com/user-attachments/assets/9921fbda-d606-470a-9677-cb041218cea9" />|
@@ -54,20 +54,48 @@ DB를 Scriptable Object를 사용하여 인게임 내에서 쉽게 관리하고 
   해당 방식으로 통해 코드의 호출을 최소화 하고 애니메이션을 통하여 연출을 추가하였습니다. </code></pre>
 
 
-### 4. 몬스터 탐지, 공격모드 전환
-|코드|관련 이미지|
-|:-----:|:-----:|
-||<img width="391" height="349" alt="image" src="https://github.com/user-attachments/assets/e7716ea9-9d0f-4ac4-8a51-d0bbafca7a77" />|
+### 4. 탐지, 공격모드 전환
+|관련 이미지|탐지 스크립트|모드 전환 스크립트|
+|:-----:|:-----:|:-----:|
+|<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/e7716ea9-9d0f-4ac4-8a51-d0bbafca7a77" />|<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/24ed6733-2fe3-4337-a7d2-86f56b1af907" />|<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/f513b760-5fb7-4eed-8e5e-9f3d7cfdb6f4" />|
 
-
+<pre><code> 푸른색 범위에 플레이어에 잡힌다면 해당 몬스터는 탐색모드(플레이어를 계속 따라감)에서 공격모드로 전환합니다.
+이때 공격을 하고 다시 ExitAttackMode를 통해 탐색모드로 전환합니다.
+이 방식은 프리팹을 통해 각 몬스터마다 탐지, 공격 범위를 쉽게 설정할 수 있다는 장점이 있습니다. </code></pre>
 
 ### 5. 대사 시스템
 
+|관련 영상 및 사진|대사 스크립트|
+|:-----:|:-----:|
+|<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/5ad03d33-5d64-47c5-ba2d-bff77da0b16e" /> | <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/5ee9e1f7-708f-4446-bf16-553119e80e88" /> 
+|<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/0d5eaa78-780b-4f97-8361-eae4ec4fc92b" />| <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/6ddac05d-c69e-4cea-9061-ad38f4908478" /> |
+
+<pre><code>JSON을 활용하여 작성된 대사 스크립트입니다
+ 대사의 주체가 누구인지 판단하여 스크립트에 적힌 대사가 출력됩니다. </code></pre>
+
 ### 6. Spine 관리 및 조절
+
+|관련 이미지|관리 스크립트|
+|:-----:|:-----:|
+|<img width="565" height="669" alt="image" src="https://github.com/user-attachments/assets/30958044-0c67-447b-b283-7741a1f4a319" />| <img width="680" height="309" alt="image" src="https://github.com/user-attachments/assets/6fb5af0e-e857-4a84-8964-1fff0b925516" />
+||<img width="739" height="156" alt="image" src="https://github.com/user-attachments/assets/c762d533-8230-4865-8fd3-a86157052096" />|
+
+<pre><code>Spine의 애니메이션을 호출받을 경우 해당 스파인 애니메이션을 재생하며 애니메이션 출력도중 이벤트가 존재할경우 
+해당 이벤트에 해당하는 함수를 출력합니다. Ex. 공격 타이밍등등 (MonsterController.cs, CharactorController.cs)</code></pre>
 
 ### 7. 충돌 감지<범용>
 
+|감지체 스크립트|접촉판단 스크립트|
+|:-----:|:-----:|
+|<img width="438" height="321" alt="image" src="https://github.com/user-attachments/assets/35ed8969-8f12-4529-8bf9-ab322bc730a8" />|<img width="918" height="645" alt="image" src="https://github.com/user-attachments/assets/6a915724-909f-4925-b9dc-d4178e35947e" />|
+
+<pre><code>충돌감지를 범용성 목적으로 제작한 스크립트입니다. 
+ 타 스크립트로부터 호출받아 작동되며 NPC나 스킬, 포탈등 플레이어와의 접촉시 해당 값을 접촉한 객체에게 되돌리며 접촉한 순간 해당 콜리더(스크립트 포함)에 명령을 내립니다.</code></pre>
+
+
 ### 8. 매니저 처리 및 참조 초기화
+
+
 
 ### 9. 오브젝트 풀 관리
 
