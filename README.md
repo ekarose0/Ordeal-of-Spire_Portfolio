@@ -20,14 +20,13 @@
 
 ## 유니티 엔진 구현
 ### 1. Inspector 커스텀
-|스크립트|결과|
+|관련 이미지| 작성 스크립트|
 |:-----:|:------:|
-|<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/e4a59ec1-e183-4b51-8020-4d1d985d4b76" />|<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/88a1d772-1044-48f6-8d41-83a70c14a802" />|
-|<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/573dd6fc-9847-43b1-8283-eb3a170900ef" />|<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/fe452863-3b01-4259-b3db-8ff18ffd6db0" />
-|
+|<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/88a1d772-1044-48f6-8d41-83a70c14a802" />|<img width="798" height="500" alt="image" src="https://github.com/user-attachments/assets/52cf784e-4222-45e0-802e-7d4bd75f84e4" />|
+|<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/f3ee5e69-6baf-4fc1-82fb-1b9b18d82088" />|<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/573dd6fc-9847-43b1-8283-eb3a170900ef" />|
 
 <pre><code> ==UnityEngine의 CustomEditor기능을 사용한 작업==
-개발자 외의 타 개발군에서 해당 프로젝트에 쉬운 접근성과 가시성을 표시하는걸 목적으로 제작되었습니다.
+개발자 외의 타 개발군에서 해당 프로젝트에 쉬운 접근성과 가시성을 표시하는걸 목적으로 제작하여 개발기간을 줄이는 목적으로 제작하였습니다.
 버튼을 통한 기능추가 및 이미지와 프리팹등 다양한 설정값을 설정하여 이를 바탕으로 실제 게임에 적용됩니다.</code></pre>
 
 
@@ -47,7 +46,7 @@ DB를 Scriptable Object를 사용하여 인게임 내에서 쉽게 관리하고 
 ### 2. 스텟 시스템
 |내역|결과물|연출 관련 스크립트|
 |:-----:|:------:|:-------:|
-|체력|<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/023a1787-62c1-4498-869b-b5bd3b9cd2cb" />||
+|체력|<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/023a1787-62c1-4498-869b-b5bd3b9cd2cb" />|<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/0e85ad07-041e-42e7-9908-c881f0f8f1db" />|
 |스테미너|<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/308252c8-ad56-405d-9645-077987980115" />|<img width="753" height="242" alt="image" src="https://github.com/user-attachments/assets/9921fbda-d606-470a-9677-cb041218cea9" />|
 
 <pre><code> 원형이 되는 함수를 건들이지 않고 부분 값을 가져와 넣는 방식입니다
@@ -95,8 +94,31 @@ DB를 Scriptable Object를 사용하여 인게임 내에서 쉽게 관리하고 
 
 ### 8. 매니저 처리 및 참조 초기화
 
+|상속 이미지|초기화 스크립트|
+|:-----:|:-----:|
+|<img width="672" height="177" alt="image" src="https://github.com/user-attachments/assets/a4f25ba2-dd9d-4d2d-9da9-129ad448f7a1" />|<img width="656" height="184" alt="image" src="https://github.com/user-attachments/assets/00cca907-6bc1-42a5-96a8-ffc0ba3e7f1e" />|
+|<img width="249" height="209" alt="image" src="https://github.com/user-attachments/assets/b8d61dcb-01ce-4e87-8c70-e127302eb0fa" />|<img width="643" height="558" alt="image" src="https://github.com/user-attachments/assets/cf409cce-cfd4-4e73-bf7e-7a41b8381b32" />|
 
+<pre><code>싱글톤을 통해 게임의 정보 데이터를 Battle~RestScene(전투 및 휴식)에서 초기화하며,
+ 이후 GameManager를 메인으로한 GameManger.Instance.(하위 매니저명)을 통해 각 하위 매니저로 접근하는 것을 목적으로 작성하였습니다.</code></pre>
 
 ### 9. 오브젝트 풀 관리
 
+|오브젝트 이미지|관리 스크립트|
+|:-----:|:-----:|
+|<img height="500" alt="image" src="https://github.com/user-attachments/assets/6da8c08f-dce7-47ea-8616-8dc815ff49c1" />|<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/40bca22f-c412-492b-864b-2e625526743d" />|
+|<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/6be637a1-a157-4b00-a116-49ad9ce74471" />|<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/3bc9b971-6d53-4fb9-b6fb-81faea0cea94" />|
+
+<pre><code>Object들을 Pool을 통해 관리하며, 각 객체에 접근하는 것이 가능합니다.
+또한, 각 오브젝트를 소환하는 메서드는 GameManager의 Pool로 접근하여 자식으로 소환하고 관리합니다</code></pre>
+
+
 ### 10. 오디오 매니저
+
+|오디오관련 이미지|재생 스크립트|관리 스크립트|
+|:-----:|:-----:|:-----:|
+|<img width="259" height="109" alt="image" src="https://github.com/user-attachments/assets/4b4ca760-907d-4cc5-ab86-62c26dd20610" />|<img width="546" height="507" alt="image" src="https://github.com/user-attachments/assets/042ba439-71c2-4f57-a2e9-25f356a10252" />|<img width="374" height="512" alt="image" src="https://github.com/user-attachments/assets/0f021f25-ae1d-4358-9bf8-aaf9c2d38eb6" />|
+
+<pre><code>사운드를 관리하는 매니저로, 게임내 배경음, 효과음등을 BackgroundAudio와 EventAudio로 관리하며(같은 종류의 오디오와는 중첩안됨)
+중첩이 가능한 분류의 음(타격음등)이 있을 경우 AudioPool을 통해 자식으로 생성하여 관리하도록 작성하였습니다.</code></pre>
+
